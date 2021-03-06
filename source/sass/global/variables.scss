@@ -1,0 +1,55 @@
+// Colors
+
+$black-text: #333333;         // content text color
+$black-title: #2d474e;        // title color
+$black-border: #79969d;       // border color
+$grey-bg-text: #6f6f6f;       // color for footer text
+$grey-bg-figcaption: #a5a5a5; // color for figcaption
+$grey-menu: #f9f9f9;          // background grey color
+$grey-bg: #f0f0f0;            // background grey color
+$angry-color:#eb5757;         // red color for form text validity
+$accent-color: #fbb03c;       //accent color is yellow
+// Font
+
+$font-text: "SF Pro Display", "Arial", sans-serif;
+$color-text: $black-text;
+$font-title: "Bebas Neue", "Arial", sans-serif;
+$color-title: $black-title;
+
+
+//for mobile
+$fontsize-text: 14px;
+$lineheight-text: 17px;
+
+$fontsize-title: 28px;
+$lineheight-title: 34px;
+
+$fontsize-title-h1: 30px;
+$lineheight-title-h1: 30px;
+
+// for tablet
+$fontsize-text-tb: 18px;
+$lineheight-text-tb: 22px;
+
+$fontsize-title-tb: 48px;
+$lineheight-title-tb: 58px;
+
+$fontsize-title-h1-tb: 41px;
+$lineheight-title-h1-tb: 41px;
+
+// for desktop
+$fontsize-title-ds: 56px;
+$lineheight-title-ds: 67px;
+
+$fontsize-title-h1-ds: 58px;
+$lineheight-title-h1-ds: 58px;
+
+// Breakpoints
+
+$mobile-width: 320px;
+$mobile-width-max: 759px;
+$tablet-width: 760px;
+$desktop-width: 1200px;
+$desktop-width-max: 1199px;
+$desktop-width: 1200px;
+$desktop-width-large: 1600px;

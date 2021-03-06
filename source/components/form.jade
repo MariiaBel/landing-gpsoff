@@ -1,0 +1,9 @@
+form(send-to="email").form
+    label.form__item
+        input.form__input(type="text" name="firstname" placeholder="Имя"  aria-label="Имя")
+        span.form__validity Укажите имя
+    label.form__item
+        input.form__input(type="tel" name="phone" placeholder="Телефон" min-length="6" max-length="15" aria-label="Номер телефона")
+        span.form__validity Укажите номер телефона
+    button(type="submit").btn.btn--full-accent.form__btn Стать партнером
+small.form__secondary-text Отправляя форму вы соглашаетесь с <a class="link link--regular" href="privacy-policy.html" target="_blank">политикой конфиденциальности</a>

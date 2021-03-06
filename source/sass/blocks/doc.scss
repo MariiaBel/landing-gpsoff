@@ -1,0 +1,20 @@
+.doc {
+  margin-top: 60px;
+  padding-left: 0;
+  font-weight: bold;
+
+  & ol {
+    padding-left: 20px;
+    font-weight: normal;
+  }
+
+  & strong {
+    display: block;
+    margin: 20px 0;
+  }
+
+  & p {
+    margin: 18px 0;
+    font-weight: normal;
+  }
+}

@@ -1,0 +1,12 @@
+
+@media (min-width: $tablet-width) {
+  .features {
+    z-index: 2;
+    position: relative;
+    background: $grey-bg;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04),
+      0 2px 6px rgba(0, 0, 0, 0.04),
+      0 -0.3px 0 $black-border,
+      0 0 1px rgba(0, 0, 0, 0.04);
+  }
+}

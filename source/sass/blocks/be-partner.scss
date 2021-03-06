@@ -1,0 +1,56 @@
+.be-partner {
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  background-color: $grey-bg;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04),
+    0 2px 6px rgba(0, 0, 0, 0.04),
+    0 0 1px rgba(0, 0, 0, 0.04);
+
+  &__lead {
+    margin: 0 0 28px;
+    color: $black-title;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .be-partner {
+    padding: 128px 0 134px;
+
+    &__form .form {
+      width: 420px;
+      margin: 0 auto;
+    }
+
+    &__lead {
+      margin: 20px auto 57px;
+      width: 370px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .be-partner {
+    padding: 130px 0;
+    text-align: left;
+    background: url("../img/write-us.jpg") top right no-repeat;
+    background-color: $grey-bg;
+
+    &__form .form {
+      margin: 0;
+    }
+
+    & .wrapper {
+      padding-left: 180px;
+    }
+
+    &__lead {
+      margin: 15px 0 43px;
+      font-size: 24px;
+      line-height: 29px;
+      padding: 0;
+      width: 445px;
+    }
+  }
+}

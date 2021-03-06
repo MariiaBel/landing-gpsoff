@@ -1,0 +1,37 @@
+@media (min-width: $desktop-width) {
+  .bg-money-left {
+    position: relative;
+    max-width: 2100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: url("../img/money.jpg") center no-repeat;
+      bottom: 300px;
+      left: -260px;
+      z-index: -2;
+    }
+  }
+
+  .bg-money-right {
+    position: relative;
+    max-width: 2100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 700px;
+      height: 600px;
+      background: url("../img/money-right.jpg") center no-repeat;
+      right: -223px;
+      bottom: -260px;
+      z-index: -2;
+    }
+  }
+}

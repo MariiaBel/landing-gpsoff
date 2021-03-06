@@ -1,0 +1,27 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  position: relative;
+  min-width: $mobile-width;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: $font-text;
+  font-size: $fontsize-text;
+  line-height: $lineheight-text;
+  color: $color-text;
+  font-style: normal;
+  font-weight: normal;
+
+  background-color: white;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    font-size: $fontsize-text-tb;
+    line-height: $lineheight-text-tb;
+  }
+}
+

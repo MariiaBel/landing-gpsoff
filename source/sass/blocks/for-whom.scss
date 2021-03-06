@@ -1,0 +1,58 @@
+.for-whom {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  background: $grey-bg;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04),
+    0 2px 6px rgba(0, 0, 0, 0.04),
+    0 0 1px rgba(0, 0, 0, 0.04);
+
+  &__header {
+    margin-bottom: 22px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .for-whom {
+    box-shadow: none;
+    background-color: initial;
+    background: url("../img/fishing-shop-tablet.jpg") center right no-repeat;
+    background-size: cover;
+    padding-top: 148px;
+    padding-bottom: 148px;
+
+    &__content {
+      padding-left: 60px;
+    }
+
+    &__desc {
+      width: 60%;
+
+      & p {
+        margin-bottom: 1em;
+        margin-top: 1em;
+      }
+    }
+
+    &__header {
+      margin-bottom: 30px;
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .for-whom {
+    background: url("../img/fishing-shop-desktop.jpg") center right no-repeat;
+    padding-top: 128px;
+    padding-bottom: 160px;
+
+    &__content {
+      padding: 0 180px;
+    }
+
+    &__header {
+      margin-bottom: 20px;
+    }
+  }
+}

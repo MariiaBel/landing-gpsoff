@@ -1,0 +1,30 @@
+.header-main {
+  background-color: $grey-menu;
+  border-bottom: 1px solid $black-border;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header-main {
+    &__tel {
+      font-size: 16px;
+      flex-grow: 1;
+      text-align: right;
+      margin-right: 64px;
+    }
+
+    &__logo {
+      width: 120px;
+      padding-right: 30px;
+      box-sizing: content-box;
+    }
+  }
+}

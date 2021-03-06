@@ -1,0 +1,124 @@
+.modal {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(10, 10, 10, 0.45);
+  overflow-y: auto;
+
+  &--active {
+    display: flex;
+  }
+
+  &__content {
+    position: relative;
+    display: block;
+    margin: auto;
+    background-color: white;
+  }
+
+  &__title {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: bold;
+
+    font-size: 28px;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 7px 0 34px;
+  }
+
+  &__video {
+    width: 100%;
+    max-width: 700px;
+
+    & iframe {
+      width: 100%;
+    }
+
+    &__wrapper {
+      width: 100%;
+      max-width: 700px;
+    }
+  }
+
+  &__form {
+    max-width: 360px;
+    width: 100%;
+    margin: 78px auto;
+    text-align: center;
+
+    & form {
+      width: 280px;
+      margin: 0 auto;
+    }
+
+    & input {
+
+      font-size: 18px;
+      line-height: 21px;
+      padding: 17px 16px;
+      margin-bottom: 35px;
+    }
+
+    & .btn {
+      font-size: 18px;
+      line-height: 21px;
+      padding: 19px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 17px;
+    right: 24px;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    background-color: white;
+  }
+
+  &__close::before,
+  &__close::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 22px;
+    height: 2px;
+    background-color: $black-title;
+  }
+
+  &__close::before {
+    transform: rotate(45deg);
+  }
+
+  &__close::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    &__form {
+      margin-left: 68px;
+      margin-right: 68px;
+
+      & form {
+        width: 314px;
+      }
+    }
+  }
+}

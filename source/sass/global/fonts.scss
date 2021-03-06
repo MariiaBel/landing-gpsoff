@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "SF Pro Display";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/SFProDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/SFProDisplay-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/SFProDisplay-Medium.woff2") format("woff2"),
+    url("../fonts/SFProDisplay-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/SFProDisplay-Light.woff2") format("woff2"),
+    url("../fonts/SFProDisplay-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+    url("../fonts/BebasNeueRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/BebasNeueBold.woff2") format("woff2"),
+    url("../fonts/BebasNeueBold.woff") format("woff");
+}
+
+.h1,
+.h2,
+.subtitle,
+strong {
+  color: $black-title;
+}
+
+.h1 {
+  font-family: $font-title;
+  font-style: normal;
+  font-weight: bold;
+  font-size: $fontsize-title-h1;
+  line-height: $lineheight-title-h1;
+  margin: 0;
+}
+
+.h2 {
+  font-family: $font-title;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $fontsize-title;
+  line-height: $lineheight-title;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: $font-text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $fontsize-text;
+  line-height: 18px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .h1 {
+    font-size: $fontsize-title-h1-tb;
+    line-height: $lineheight-title-h1-tb;
+  }
+
+  .h2 {
+    font-size: $fontsize-title-tb;
+    line-height: $lineheight-title-tb;
+  }
+
+  .subtitle {
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .h1 {
+    font-size: $fontsize-title-h1-ds;
+    line-height: $lineheight-title-h1-ds;
+  }
+
+  .h2 {
+    font-size: $fontsize-title-ds;
+    line-height: $lineheight-title-ds;
+  }
+
+  .subtitle {
+    font-size: 30px;
+    line-height: 37px;
+    margin-top: 0;
+  }
+}

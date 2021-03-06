@@ -1,0 +1,84 @@
+.franchises {
+  margin-top: 54px;
+  margin-bottom: 50px;
+  text-align: center;
+
+  &__item {
+    padding: 0 46px 28px;
+    margin-top: 21px;
+    border-bottom: 1.5px solid $grey-bg;
+
+    &-price {
+      margin-top: 0;
+      margin-bottom: 26px;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &-points li {
+      margin: 22px 0;
+    }
+
+    &-header {
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .franchises {
+    margin-top: 28px;
+    margin-bottom: 65px;
+
+    &__item {
+      padding: 32px 220px;
+      border-bottom: none;
+      margin-top: 0;
+
+      &-price {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 22px;
+      }
+
+      &-points li {
+        margin: 21px 0 30px;
+      }
+
+      &-header {
+        font-size: 36px;
+        line-height: 43px;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .franchises {
+    margin-top: 190px;
+
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 133px;
+      padding: 0 47px;
+    }
+
+    &__item {
+      padding: 58px 0;
+      border-bottom: none;
+
+      &-header {
+        font-size: 36px;
+        line-height: 43px;
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.btn {
+  outline: 2px solid $accent-color;
+  border: none;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 7px 24px;
+  background-color: transparent;
+  cursor: pointer;
+  color: $black-title;
+
+  &:hover {
+    background: $accent-color;
+  }
+
+  &:active,
+  &:focus {
+    outline: 1px solid $accent-color;
+    background: $grey-bg;
+  }
+
+  &--full-accent {
+    background-color: $accent-color;
+    outline: none;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    padding: 7px;
+
+    &:hover {
+      background: white;
+      outline: 2px solid $accent-color;
+    }
+  }
+
+
+  &--secondary {
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+    line-height: 17px;
+    outline: 1px solid $grey-bg;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04),
+      0 0 2px rgba(0, 0, 0, 0.06),
+      0 0 1px rgba(0, 0, 0, 0.04);
+  }
+
+
+  &--accent {
+    width: 100%;
+    padding: 6px;
+    font-size: 14px;
+    line-height: 17px;
+    outline: 2px solid $accent-color;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04),
+      0 0 2px rgba(0, 0, 0, 0.06),
+      0 0 1px rgba(0, 0, 0, 0.04);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .btn {
+    &--secondary,
+    &--accent {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      padding: 18px;
+    }
+
+    &--full-accent {
+      font-size: 24px;
+      line-height: 29px;
+      padding: 16px;
+    }
+  }
+}

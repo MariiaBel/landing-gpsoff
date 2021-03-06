@@ -1,0 +1,55 @@
+section.wrapper.online-store
+    .online-store__content
+        picture.online-store__img
+            source(type="image/webp" 
+                media="(min-width: 1200px)"
+                srcset="img/adaptive-online-store-desktop.webp 1x, img/adaptive-online-store-desktop@2x.webp 2x")
+            source(type="image/webp" media="(min-width: 760px)"
+                srcset="img/adaptive-online-store-tablet.webp 1x, img/adaptive-online-store-tablet@2x.webp 2x")
+            source(type="image/webp" 
+                srcset="img/adaptive-online-store.webp 1x, img/adaptive-online-store@2x.webp 2x")
+            
+            source(media="(min-width: 1200px)"
+                srcset="img/adaptive-online-store-desktop.jpg 1x, img/adaptive-online-store-desktop@2x.jpg 2x")
+            source(media="(min-width: 760px)"
+                srcset="img/adaptive-online-store-tablet.jpg 1x, img/adaptive-online-store-tablet@2x.jpg 2x")
+            img(src="img/adaptive-online-store.jpg" 
+                srcset="img/adaptive-online-store@2x.jpg 2x" width="280" height="268" 
+                alt="Интернет магазин GPSOFF на ноутбуке")
+        .online-store__desc
+            h2.h2.online-store__header Действующий интернет-магазин
+
+            a(href="https://gpsoff-ekaterinburg.ru/" target="_blank" rel="noopener").online-store__link.link.link--accent gpsoff-ekaterinburg.ru
+            dl.dl.online-store__dl
+                div
+                    dt 3 года
+                    dd действует магазин
+                div
+                    dt 50+
+                    dd посетителей в день
+                div
+                    dt 30+
+                    dd продаж в месяц
+
+    p.online-store__text
+        svg.hidden-mb.online-store__text-icon
+            use(xlink:href ='img/sprite.svg#important-devices')
+        Магазин адаптирован под все устройства
+
+    picture.online-store__img-bottom
+        source(type="image/webp" 
+            media="(min-width: 1200px)"
+            srcset="img/responsive-site-for-devices-desktop.webp 1x, img/responsive-site-for-devices-desktop@2x.webp 2x")
+        source(type="image/webp" media="(min-width: 760px)"
+            srcset="img/responsive-site-for-devices-tablet.webp 1x, img/responsive-site-for-devices-tablet@2x.webp 2x")
+        source(type="image/webp" 
+            srcset="img/responsive-site-for-devices.webp 1x, img/responsive-site-for-devices@2x.webp 2x")
+        
+        source(media="(min-width: 1200px)"
+            srcset="img/responsive-site-for-devices-desktop.jpg 1x, img/responsive-site-for-devices-desktop@2x.jpg 2x")
+        source(media="(min-width: 760px)"
+            srcset="img/responsive-site-for-devices-tablet.jpg 1x, img/responsive-site-for-devices-tablet@2x.jpg 2x")
+        img(src="img/responsive-site-for-devices.jpg" 
+            srcset="img/responsive-site-for-devices@2x.jpg 2x" width="290" height="225" 
+            alt="Адаптивный сайт GPSOFF.ru под все устройства")
+    
