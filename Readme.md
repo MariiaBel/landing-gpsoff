@@ -2,6 +2,7 @@
 
 * Заказчик: "[GPSoff]("https://www.gpsoff.ru/")" 
 * Исполнитель: [Мария Белогубова](https://wwwpage.ru).
+* GilHub Pages: https://mariiabel.github.io/landing-gpsoff/build/
 
 ---
 
